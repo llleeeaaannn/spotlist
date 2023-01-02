@@ -1,0 +1,194 @@
+/* Content Styling */
+.playlist {
+  width: 100%;
+  padding: 2rem;
+}
+
+.created {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.created h2 {
+  font-size: var(--fs-xl);
+  margin-bottom: 0.75rem;
+}
+
+.created span {
+  font-size: var(--fs-base);
+}
+
+.created h2,
+.created span {
+  text-align: center;
+}
+
+/* Open and Copy Buttons Styling */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+.buttons a,
+.buttons span {
+  color: var(--green);
+  font-size: var(--fs-base);
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--black);
+  width: 50%;
+  max-width: 20rem;
+  padding: 0.75rem;
+  border: 3px solid var(--black);
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.buttons a:hover,
+.buttons span:hover {
+  color: var(--black);
+  background-color: var(--green);
+  transition: all 500ms ease-in-out;
+}
+
+.buttons span {
+  transition: all 500ms ease-in-out;
+}
+
+/* Unfound & Cover Songs Styling */
+.unfound,
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.unfound {
+  margin-bottom: 1rem;
+}
+
+.unfound h3,
+.cover h3 {
+  font-size: var(--fs-base);
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.unfoundList,
+.coverList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.unfoundList span,
+.coverList span {
+  text-align: center;
+  font-weight: bold;
+}
+
+.unfoundList > div,
+.coverList > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+
+.unfoundList svg,
+.coverList svg {
+  width: var(--fs-base);
+  height: var(--fs-base);
+  min-width: var(--fs-base);
+  min-height: var(--fs-base);
+  margin-left: 0.25rem;
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+.unfoundList svg:hover,
+.coverList svg:hover {
+  transform: scale(1.15);
+  transition: all 250ms;
+}
+
+.unfoundList span,
+.coverList span,
+.unfoundList svg,
+.coverList svg {
+  font-size: var(--fs-base);
+}
+
+/* No Playlist Available */
+.failed {
+  color: var(--black);
+}
+
+.failed a {
+  color: var(--black);
+}
+
+/* Media Query for Mobile Devices below 480px in width */
+@media (max-device-width:480px) {
+
+  .playlist {
+    width: 100%;
+    max-width: 100%;
+    max-width: 100vw;
+  }
+
+  /* Header Styling */
+  .created h2 {
+    font-size: var(--fs-xxl);
+    margin-bottom: 0.75rem;
+  }
+
+  .created span {
+    font-size: var(--fs-md);
+  }
+
+  /* Open and Copy Buttons Styling */
+  .buttons {
+    padding: 2rem 0rem;
+  }
+
+  .buttons a,
+  .buttons span {
+    font-size: var(--fs-md);
+    padding: 0.75rem;
+    vertical-align: middle;
+  }
+
+  /* Unfound & Covers Styling */
+  .unfound h3,
+  .cover h3 {
+    font-size: var(--fs-md);
+    margin-bottom: 0.5rem;
+  }
+
+  .unfoundList span,
+  .coverList span,
+  .unfoundList svg,
+  .coverList svg {
+    font-size: var(--fs-base);
+  }
+
+  .unfoundList svg,
+  .coverList svg {
+    width: var(--fs-base);
+    height: var(--fs-base);
+    min-width: var(--fs-base);
+    min-height: var(--fs-base);
+    margin-left: 0.3rem;
+  }
+
+}

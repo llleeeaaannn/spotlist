@@ -1,0 +1,280 @@
+/* GT ULTRA FONT */
+/* Ultra */
+@font-face {
+    font-family: 'GT Ultra Standard';
+    src: url('./fonts/GTUltra-Ultra.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Ultra Median';
+    src: url('./fonts/GTUltraMedian-Ultra.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'GT Ultra Fine';
+    src: url('./fonts/GTUltraFine-Ultra.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Black */
+@font-face {
+    font-family: 'GT Black Standard';
+    src: url('./fonts/GTUltra-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Black Italic';
+    src: url('./fonts/GTUltra-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Black Median';
+    src: url('./fonts/GTUltraMedian-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Black Median Italic';
+    src: url('./fonts/GTUltraMedian-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Black Fine';
+    src: url('./fonts/GTUltraFine-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Black Fine Italic';
+    src: url('./fonts/GTUltraFine-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'GT Bold Standard';
+    src: url('./fonts/GTUltra-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Bold Italic';
+    src: url('./fonts/GTUltra-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Bold Median';
+    src: url('./fonts/GTUltraMedian-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Bold Median Italic';
+    src: url('./fonts/GTUltraMedian-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Bold Fine';
+    src: url('./fonts/GTUltraFine-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Bold Fine Italic';
+    src: url('./fonts/GTUltraFine-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'GT Regular';
+    src: url('./fonts/GTUltra-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Regular Italic';
+    src: url('./fonts/GTUltra-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Regular Median';
+    src: url('./fonts/GTUltraMedian-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Regular Median Italic';
+    src: url('./fonts/GTUltraMedian-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Regular Fine';
+    src: url('./fonts/GTUltraFine-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Regular Fine Italic';
+    src: url('./fonts/GTUltraFine-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Light */
+@font-face {
+    font-family: 'GT Light';
+    src: url('./fonts/GTUltra-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Light Italic';
+    src: url('./fonts/GTUltra-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Light Median';
+    src: url('./fonts/GTUltraMedian-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Light Median Italic';
+    src: url('./fonts/GTUltraMedian-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Light Fine';
+    src: url('./fonts/GTUltraFine-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Light Fine Italic';
+    src: url('./fonts/GTUltraFine-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Thin */
+@font-face {
+    font-family: 'GT Thin';
+    src: url('./fonts/GTUltra-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Thin Italic';
+    src: url('./fonts/GTUltra-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Thin Median';
+    src: url('./fonts/GTUltraMedian-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Thin Median Italic';
+    src: url('./fonts/GTUltraMedian-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Thin Fine';
+    src: url('./fonts/GTUltraFine-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Thin Fine Italic';
+    src: url('./fonts/GTUltraFine-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* MARKER FONT */
+@font-face {
+    font-family: 'BrownBagLunch';
+    src: url('./fonts/BrownBagLunch.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

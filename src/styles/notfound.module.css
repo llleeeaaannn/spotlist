@@ -1,0 +1,31 @@
+/* Error 404 page Styling */
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.notFound span {
+  color: var(--black);
+}
+
+.notFound :first-child {
+  font-size: var(--fs-xxxl);
+  margin-bottom: 0.5rem;
+  font-family: 'GT Ultra Median';
+}
+
+.notFound :nth-child(2){
+  font-size: var(--fs-lg);
+  margin-bottom: 1rem;
+  font-family: 'GT Thin Fine';
+}
+
+.notFound a {
+  color: var(--black);
+  font-size: var(--fs-lg);
+  text-decoration: none;
+  font-family: 'GT Thin Fine';
+}

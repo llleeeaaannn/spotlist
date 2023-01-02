@@ -1,0 +1,338 @@
+/* Searchbar Styling */
+.searchbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  box-sizing: border-box;
+}
+
+/* Auth Container & Button Styling */
+.auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.authButton {
+  color: var(--green);
+  font-size: var(--fs-base);
+  background-color: var(--black);
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border: 3px solid var(--black);
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.authButton:hover {
+  color: var(--black);
+  background-color: var(--green);
+  border: 3px solid var(--black);
+}
+
+.authButton div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.authButton span {
+  font-size: var(--fs-base);
+}
+
+.authButton svg {
+  width: var(--fs-base);
+  height: var(--fs-base);
+  margin-left: 0.5rem;
+}
+
+.auth .error {
+  margin-bottom: 0rem;
+}
+
+/* Create Playlist Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form > span {
+  cursor: pointer;
+}
+
+.searchButton {
+  color: var(--green);
+  font-size: var(--fs-base);
+  background-color: var(--black);
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  border: 3px solid var(--black);
+  transition: all 500ms ease-in-out;
+}
+
+.searchButton:hover {
+  color: var(--black);
+  background-color: var(--green);
+  border: 3px solid var(--black);
+}
+
+.searchButton > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchButton span {
+  font-size: var(--fs-base);
+}
+
+.searchButton svg {
+  width: var(--fs-base);
+  height: var(--fs-base);
+  margin-left: 0.5rem;
+}
+
+/* Input field styling */
+.url,
+.name,
+.description {
+  width: 100%;
+  padding: 0.5rem;
+  padding-left: 0.75rem;
+  border: none;
+  outline: none;
+  border: 3px solid var(--black);
+  background-color: var(--green);
+  font-size: var(--fs-base);
+  color: var(--black);
+}
+
+.url {
+  padding: 0.9rem;
+  padding-left: 0.75rem;
+}
+
+.url:valid,
+.name:valid,
+.description:valid {
+  border: 3px solid var(--black);
+}
+
+.url:valid:focus,
+.name:valid:focus,
+.description:valid:focus {
+  border: 3px solid var(--black);
+}
+
+.url:invalid,
+.name:invalid,
+.description:invalid {
+  border: 3px solid var(--opaqueRed);
+}
+
+.url:invalid:focus,
+.name:invalid:focus,
+.description:invalid:focus  {
+  border: 3px solid var(--red);
+}
+
+.url::placeholder,
+.name::placeholder,
+.description::placeholder {
+  color: var(--black);
+  padding-left: 1px;
+}
+
+.url:placeholder-shown,
+.name:placeholder-shown,
+.description:placeholder-shown,
+.url:placeholder-shown:focus,
+.name:placeholder-shown:focus,
+.description:placeholder-shown:focus {
+  border: 3px solid var(--black);
+}
+
+/* Setlist Link Input Field Error Display (shows when invalid, hides otherwise) */
+.urlError {
+  color: var(--red);
+  font-size: var(--fs-sm);
+  margin-top: 0.4rem;
+}
+
+.url:valid + .urlError,
+.url:placeholder-shown + .urlError,
+.url:placeholder-shown:focus + .urlError {
+  display: none;
+}
+
+.url:invalid + .urlError {
+  color: var(--opaqueRed);
+}
+
+.url:invalid:focus + .urlError {
+  color: var(--red);
+}
+
+/* Options Styling */
+.optionsButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--black);
+  cursor: pointer;
+}
+
+.optionsButton span {
+  font-size: var(--fs-base);
+}
+
+.optionsButton svg {
+  width: var(--fs-md);
+  height: var(--fs-md);
+  padding-top: 0.1rem;
+  transition: all 500ms;
+}
+
+.optionsButton .arrow {
+  padding-bottom: 0.1rem;
+  transform: rotate(180deg);
+  transition: all 500ms;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Error Styling */
+.error {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.error span {
+  color: var(--black);
+  font-size: var(--fs-base);
+}
+
+.error span::selection {
+  color: var(--green);
+  background-color: var(--black);
+}
+
+.error svg {
+  color: var(--black);
+  width: var(--fs-base);
+  height: var(--fs-base);
+  min-width: var(--fs-base);
+  min-height: var(--fs-base);
+  margin-right: 0.3rem;
+}
+
+/* Media Query for Mobile Devices below 480px in width */
+@media (max-device-width:480px) {
+  .searchbar {
+    width: 100%;
+  }
+
+  /* Button Styling */
+  .authButton {
+    font-size: var(--fs-md);
+  }
+
+  .authButton span {
+    font-size: var(--fs-md);
+  }
+
+  .authButton svg {
+    width: var(--fs-md);
+    height: var(--fs-md);
+    /* margin-left: 0.5rem; */
+  }
+
+  .searchButton {
+    font-size: var(--fs-md);
+  }
+
+  .searchButton span {
+    font-size: var(--fs-md);
+  }
+
+  .searchButton svg {
+    width: var(--fs-md);
+    height: var(--fs-md);
+  }
+
+  /* Input field styling */
+  .url,
+  .name,
+  .description {
+    padding: 0.5rem;
+    padding-left: 0.75rem;
+    font-size: var(--fs-md);
+  }
+
+  .url {
+    padding: 0.9rem;
+    padding-left: 0.75rem;
+  }
+
+  /* Options Styling */
+  .optionsButton span {
+    font-size: var(--fs-md);
+  }
+
+  .optionsButton {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .optionsButton svg {
+    width: var(--fs-lg);
+    height: var(--fs-lg);
+  }
+
+  .options {
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Error Styling */
+  .error {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    padding: 0rem;
+    padding-left: 0.25rem;
+  }
+
+  .error span {
+    color: var(--black);
+    font-size: calc(var(--fs-base) + 0.1rem);
+  }
+
+  .error svg {
+    width: calc(var(--fs-base) + 0.1rem);
+    height: calc(var(--fs-base) + 0.1rem);
+    min-width: calc(var(--fs-base) + 0.1rem);
+    min-height: calc(var(--fs-base) + 0.1rem);
+    margin-right: 0.3rem;
+  }
+}

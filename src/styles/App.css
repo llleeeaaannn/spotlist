@@ -1,0 +1,100 @@
+/* Import CSS (this should all be added to same file in production) */
+@import url('./fonts.css');
+
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+* {
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS Properties */
+:root {
+  /* Colors */
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(15, 15, 15, 1);
+  --lightBlack: rgba(25, 25, 25, 1);
+  --darkGrey: rgba(35, 35, 35, 1);
+  --grey: rgba(45, 45, 45, 1);
+  --green: rgba(28, 196, 84, 1);
+	--opaqueGreen: rgba(28, 196, 84, 0.5);
+	--red: rgba(255, 0, 0, 1);
+	--opaqueRed: rgba(255, 0, 0, 0.75);
+	/* Fonts */
+	--fs-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+	--fs-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+	--fs-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+	--fs-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+	--fs-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+	--fs-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+	--fs-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+}
+
+/* General Styling */
+html {
+	color: var(--black);
+	background-color: var(--green);
+}
+
+html, button, ::placeholder {
+	font-family: 'GT Regular', sans-serif;
+}
+
+::placeholder {
+	font-family: 'GT Regular', sans-serif;
+}
+
+/* Selection Styling */
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+span::selection,
+input::selection {
+  color: var(--green);
+  background-color: var(--black);
+}
