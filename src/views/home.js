@@ -14,6 +14,8 @@ const Home = () => {
 
   const redirectURL = 'http://localhost:3000';
   const regex = new RegExp('.*setlist\.fm.*');
+  const backend = 'https://mkjs0ejsib.execute-api.us-east-1.amazonaws.com'
+  // const backend = 'http://34.192.149.202:4000'
 
   const TOKEN = "https://accounts.spotify.com/api/token";
 
@@ -65,7 +67,7 @@ const Home = () => {
   async function requestAuthLink() {
     console.log('Requesting Auth Link');
     try {
-      const data = await fetch('http://3.83.23.123:4000/auth');
+      const data = await fetch(backend + '/auth');
       const json = await data.json();
       const url = json.auth;
       window.location.href = url; // Show Spotify's authorization screen
@@ -121,7 +123,7 @@ const Home = () => {
   }
 
   async function fetchAccessToken(code) {
-    const data = await fetch('http://3.83.23.123:4000/access');
+    const data = await fetch(backend + '/access');
     const json = await data.json();
     const query1 = json.query1;
     const query2 = json.query2;
@@ -189,7 +191,7 @@ const Home = () => {
     removeErrors();
     const setlistID = parseSetlistLink(url);
     try {
-      const data = await fetch('http://3.83.23.123:4000/setlist', {
+      const data = await fetch(backend + '/setlist', {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
