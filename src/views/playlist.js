@@ -11,6 +11,7 @@ const Playlist = () => {
 
   const [copiedLink, setCopiedLink] = useState(false);
 
+  // Function which accepts a link and copies it to the devices clipboard
   function copyLink(link) {
     if ('clipboard' in navigator) {
       navigator.clipboard
@@ -20,6 +21,7 @@ const Playlist = () => {
     setTimeout(() => setCopiedLink(false), 3000);
   }
 
+  // Function which accepts a song object and copies the song details to the devices clipboard
   function copySong(song) {
     const text = song.artist ? `${song.name} by ${song.artist}` : `${song.name}`;
     if ('clipboard' in navigator) {
