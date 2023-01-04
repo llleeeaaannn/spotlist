@@ -236,3 +236,6 @@ export default Home;
 // Mobile styling
 // Add screenshots to manifest.json as seen in https://developer.mozilla.org/en-US/docs/Web/Manifest/screenshots
 // Add icons
+// Change names of folders and repos to Spotlist
+// Add comments
+// Test all errors and add further error handling
