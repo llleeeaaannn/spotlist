@@ -24,6 +24,7 @@
 - Service Workers
 - HTML
 - CSS
+- CSS Modules
 
 
 ## Features
