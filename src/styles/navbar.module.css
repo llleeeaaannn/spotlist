@@ -6,74 +6,64 @@
   align-items: center;
   width: 100%;
   padding: 1.5rem 3rem;
-  background-color: var(--green);
+  /* color: var(--black); */
+  color: var(--green);
+  /* background-color: var(--green); */
+  background-color: var(--black);
 }
 
 .navbar h1 {
-  font-size: var(--fs-xl);
+  font-size: var(--fs-xxl);
+  /* font-family: 'GT Ultra Standard', sans-serif; */
+  /* font-family: 'GT Ultra Median', sans-serif; */
+  font-family: 'GT Ultra Fine', sans-serif;
 }
 
-/* Menu Icon Styling */
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 1.9rem;
-  width: 1.9rem;
-	cursor: pointer;
-	z-index: 200;
-}
-
-.selectedHamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 1.9rem;
-  width: 1.9rem;
-	cursor: pointer;
-	z-index: 200;
-}
-
-.bar {
-  height: 3px;
-  width: 100%;
-  background-color: var(--black);
-  transition: all 800ms ease-in-out;
-}
-
-.selectedHamburger .bar {
+/* Buttons */
+.github {
+  cursor: pointer;
   transition: all 200ms ease-in-out;
-  background-color: var(--green);
-  transform-origin: top left;
 }
 
-.selectedHamburger .bar:nth-of-type(1) {
-  transition: all 500ms ease-in-out;
-  transform: rotate(45deg);
-  transform-origin: top left;
-  width: 2.45rem;
+.github:hover {
+  transform: scale(1.1);
+  transition: all 200ms ease-in-out;
 }
 
-.selectedHamburger .bar:nth-of-type(2) {
-  transition: all 100ms ease-in-out;
-  transform-origin: center;
-  width: 0;
+.github svg {
+  /* fill: var(--black); */
+  fill: var(--green);
+  width: var(--fs-xl);
+  height: var(--fs-xl);
 }
 
-.selectedHamburger .bar:nth-of-type(3) {
-  transition: all 500ms ease-in-out;
-  transform: rotate(-45deg);
-  transform-origin: bottom left;
-  width: 2.45rem;
+/* Wave Styling */
+.wave {
+
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  /* width: calc(139% + 1.3px); */
+  width: 100%;
+  max-width: 100%;
+  height: 1.5rem;
+  fill: var(--black);
 }
 
 /* Media Query for Mobile Devices below 480px in width */
 @media (max-device-width:480px) {
   .navbar {
-    padding: 2rem;
+    padding: 1.5rem 2rem;
   }
 
   .navbar h1 {
     font-size: var(--fs-xxl);
+  }
+
+  /* Wave Styling */
+  .wave svg {
+    height: 0.75rem;
   }
 }
