@@ -1,6 +1,6 @@
 # Spotlist
 > An Offline-First Progressive Web Application which transforms concert setlists into Spotify Playlists.
-> You can find the it at [Spotlist.net](https://www.spotlist.net)
+> You can find it at [Spotlist.net](https://www.spotlist.net)
 
 ## Table of Contents
 * [General Info](#general-information)
