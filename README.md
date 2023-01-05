@@ -15,7 +15,7 @@
 - Spotlist is a full stack application which creates playlists in a user's Spotify account from a setlist.fm setlist.
 - Spotlist's frontend is built in Javascript on the React framework.
 - Spotlist's backend is a Node.js server built on the Express framework, hosted on an AWS EC2 instance and accessed through AWS's API Gateway. The backend can be found at the following [repository.](https://github.com/llleeeaaannn/spotlistAPI)
-- The purpose of Spotlist is to allow concert goers, in 3 clicks, to effortlessly create a playlist in their Spotify account with every song from any setlist of their choice.
+- The purpose of Spotlist is to allow concert goers, in 3 clicks, to effortlessly create a playlist in their Spotify account with every song from the setlist of their choice.
 
 
 ## Technologies Used
@@ -28,7 +28,7 @@
 
 ## Features
 Spotlist provides the following features:
-- The ability to create a playlist, comprising of all the songs from a chosen setlist, in the user's Spotify account from a setlist.fm link.
+- The ability to create a playlist, comprising of all the songs from a chosen setlist, in the user's Spotify account from a [setlist.fm](https://www.setlist.fm/) link.
 - The application is lightweight and designed as an offline first progressive web app whereby users can take advantage of modern web technologies including background sync, notifications, offline mode...
 - Spotlist creates and assigns a custom name and description for the playlist based upon data parsed from the setlist while also allowing user's to input their own name and description if desired.
 

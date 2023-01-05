@@ -239,3 +239,4 @@ export default Home;
 // Change names of folders and repos to Spotlist
 // Add comments
 // Test all errors and add further error handling
+// Change logo
