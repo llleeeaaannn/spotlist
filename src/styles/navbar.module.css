@@ -5,18 +5,14 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1.5rem 3rem;
-  /* color: var(--black); */
+  padding: 1.75rem 3rem 1.5rem 3rem;
   color: var(--green);
-  /* background-color: var(--green); */
   background-color: var(--black);
 }
 
 .navbar h1 {
   font-size: var(--fs-xxl);
-  /* font-family: 'GT Ultra Standard', sans-serif; */
-  /* font-family: 'GT Ultra Median', sans-serif; */
-  font-family: 'GT Ultra Fine', sans-serif;
+  font-family: 'GT Ultra Fine', 'GT Regular', sans-serif;
 }
 
 /* Buttons */
@@ -31,7 +27,6 @@
 }
 
 .github svg {
-  /* fill: var(--black); */
   fill: var(--green);
   width: var(--fs-xl);
   height: var(--fs-xl);

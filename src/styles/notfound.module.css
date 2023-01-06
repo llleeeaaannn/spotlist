@@ -14,18 +14,18 @@
 .notFound :first-child {
   font-size: var(--fs-xxxl);
   margin-bottom: 0.5rem;
-  font-family: 'GT Ultra Median';
+  font-family: 'GT Ultra Fine', 'GT Regular', sans-serif;
 }
 
 .notFound :nth-child(2){
   font-size: var(--fs-lg);
   margin-bottom: 1rem;
-  font-family: 'GT Thin Fine';
+  font-family: 'GT Regular', sans-serif;
 }
 
 .notFound a {
   color: var(--black);
   font-size: var(--fs-lg);
   text-decoration: none;
-  font-family: 'GT Thin Fine';
+  font-family: 'GT Regular', sans-serif;
 }
