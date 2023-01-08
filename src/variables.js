@@ -1,3 +1,5 @@
+// Client side variables (Public Only)
+
 // Setlist.fm regex (ensures string contains 'setlist.fm')
 const linkRegex = new RegExp('.*setlist\.fm.*');
 
