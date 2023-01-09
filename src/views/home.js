@@ -19,10 +19,10 @@ const Home = () => {
     onPageLoad();
   }, [])
 
+  // Function which checks for valid Spotify access token in localStorage and sets 'authenticated' accordingly
   function checkForAccessToken() {
     const access = localStorage.getItem('access');
     if (access === null) return setAuthenticated(false);
-
     const accessJSON = JSON.parse(access);
     if (accessJSON.expiry > getNowTime()) {
       accessToken = accessJSON.value;
@@ -106,6 +106,7 @@ const Home = () => {
     return true;
   }
 
+  // Function which gets 'code' parameter from URL and returns it
   function getCode() {
     let code;
     const queryString = window.location.search;
@@ -172,6 +173,7 @@ const Home = () => {
     setCoverSongs(setlist.coverSongs); //Not instant
   }
 
+  // Function which resets error messages
   function removeErrors() {
     setAuthError('');
     setSetlistError('');
@@ -234,10 +236,7 @@ export default Home;
 // Make website offline compatible as seen in: https://www.youtube.com/watch?v=cmGr0RszHc8
 // Handle user clicking enter when searching (use form better)
 // Implement refresh tokens
-// Mobile styling
 // Add screenshots to manifest.json as seen in https://developer.mozilla.org/en-US/docs/Web/Manifest/screenshots
-// Add icons
 // Change names of folders and repos to Spotlist
 // Add comments
 // Test all errors and add further error handling
-// Change logo
