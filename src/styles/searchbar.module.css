@@ -166,6 +166,7 @@
   color: var(--red);
   font-size: var(--fs-sm);
   margin-top: 0.4rem;
+  transition: all 500ms ease-in-out;
 }
 
 .url:valid + .urlError,
