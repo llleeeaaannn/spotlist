@@ -4,7 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem 2rem;
+  margin-top: 5rem;
 }
 
 .notFound span {
@@ -13,12 +14,12 @@
 
 .notFound :first-child {
   font-size: var(--fs-xxxl);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   font-family: 'GT Ultra Fine', 'GT Regular', sans-serif;
 }
 
 .notFound :nth-child(2){
-  font-size: var(--fs-lg);
+  font-size: var(--fs-base);
   margin-bottom: 1rem;
   font-family: 'GT Regular', sans-serif;
 }
@@ -28,4 +29,23 @@
   font-size: var(--fs-lg);
   text-decoration: none;
   font-family: 'GT Regular', sans-serif;
+  margin-top: 1.5rem;
+}
+
+.notFound a {
+  color: var(--black);
+  text-decoration: none;
+  font-size: var(--fs-base);
+  background-color: var(--green);
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  border: 3px solid var(--black);
+  transition: all 500ms ease-in-out;
+}
+
+.notFound a:hover {
+  color: var(--green);
+  background-color: var(--black);
+  border: 3px solid var(--black);
 }
