@@ -57,8 +57,8 @@ const Home = () => {
     return true;
   }
 
+  // Function which calls spotlistAPI auth route to retrieve Spotify authorization screen URL and then goes to said URL
   async function requestAuthLink() {
-    console.log('Requesting Auth Link');
     try {
       const data = await fetch(backendAPI + '/auth');
       const json = await data.json();
@@ -69,7 +69,7 @@ const Home = () => {
     }
   }
 
-  // Checks if query exists in URL, if so call handleRedirect()
+  // Function to check if query exists in URL, if so call handleRedirect()
   function onPageLoad() {
     if (window.location.search.length > 0) {
       handleRedirect();
