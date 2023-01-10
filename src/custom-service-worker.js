@@ -16,3 +16,7 @@ self.addEventListener('install', (event) => {
       })
   )
 });
+
+self.addEventListener('fetch', (event) => {
+  // Intercept fetch and check cache for files, if in cache serve them if not fetch from network
+});
