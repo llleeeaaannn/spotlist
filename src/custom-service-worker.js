@@ -1,9 +1,9 @@
 const CACHE_NAME = "version-1";
 
-const urlsToCache = [
+const urls = [
   'index.html',
-  'static/js/main.js',
-  'static/css/main.css'
+  'static/js/main.c40bf133.js',
+  'static/css/main.3465aa8e.css'
 ];
 
 self.addEventListener('install', (event) => {
