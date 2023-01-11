@@ -7,13 +7,14 @@ const urls = [
   '/static/media/GTUltra-Regular.41205ca9d5907eb1575a.woff'
 ];
 
-self.addEventListener('install', (event) => {
-  console.log('Installed');
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => {
-        console.log('Opened cache');
-        return cache.addAll(urls);
-      })
-  )
-});
+// self.addEventListener('install', (event) => {
+//   console.log('Installed');
+//   event.waitUntil(
+//     caches.open(CACHE_NAME)
+//       .then((cache) => {
+//         console.log('Opened cache');
+//         return cache.addAll(urls);
+//       }
+//     )
+//   )
+// });

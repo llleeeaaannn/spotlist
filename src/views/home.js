@@ -145,7 +145,7 @@ const Home = () => {
       setAuthenticating(false);
       storeAccessToken(access_token, expiry);
     } else {
-      setAuthError('Unable to connect to your Spotify account, please try again');
+      setAuthError('Unable to connect to your Spotify account, please try again!');
     }
   }
 
@@ -155,13 +155,6 @@ const Home = () => {
       expiry: getNowTime() + ((expiry - 300) * 1000)
     }
     localStorage.setItem('access', JSON.stringify(access));
-  }
-
-  function clearPlaylistData() {
-    setPlaylistID(); //Not instant
-    setPlaylistLink(); //Not instant
-    setUnfoundSongs(); //Not instant
-    setCoverSongs(); //Not instant
   }
 
   function makePlaylistData(setlist) {
