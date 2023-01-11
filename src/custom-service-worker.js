@@ -16,29 +16,3 @@ self.addEventListener('install', (event) => {
       })
   )
 });
-
-const cacheFirst = async (request) => {
-  console.log(request);
-  const responseFromCache = await caches.match(request);
-  if (responseFromCache) {
-    console.log('FOUND IN CACHE');
-    return responseFromCache;
-  }
-  return fetch(request);
-};
-
-self.addEventListener('fetch', (event) => {
-  console.log('Intercepted FETCH');
-  event.respondWith(cacheFirst(event.request));
-});
-
-// self.addEventListener('fetch', (event) => {
-//   console.log('Fetch Intercepted');
-//   event.respondWith(
-//     (async function () {
-//       const response = await caches.match(event.request);
-//       console.log(response);
-//       return response || fetch(event.request);
-//     })
-//   )
-// });
