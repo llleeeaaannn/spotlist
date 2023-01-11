@@ -2,8 +2,8 @@ const CACHE_NAME = "version-1";
 
 const urls = [
   'index.html',
-  'static/js/main.c40bf133.js',
-  'static/css/main.3465aa8e.css'
+  'static/js/main.e8225c8f.js',
+  'static/css/main.09b63fcd.css'
 ];
 
 self.addEventListener('install', (event) => {
@@ -26,6 +26,7 @@ const cacheFirst = async (request) => {
 };
 
 self.addEventListener('fetch', (event) => {
+  console.log('Intercepted FETCH');
   event.respondWith(cacheFirst(event.request));
 });
 

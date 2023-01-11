@@ -145,8 +145,6 @@ const Home = () => {
       setAuthenticating(false);
       storeAccessToken(access_token, expiry);
     } else {
-      console.log('Unsucessful Response');
-      console.log(this.responseText);
       setAuthError('Unable to connect to your Spotify account, please try again');
     }
   }
