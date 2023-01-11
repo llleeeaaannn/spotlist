@@ -2,7 +2,7 @@ const CACHE_NAME = "version-1";
 
 const urls = [
   'index.html',
-  'static/js/main.e8225c8f.js',
+  'static/js/main.dc762096.js',
   'static/css/main.09b63fcd.css'
 ];
 
