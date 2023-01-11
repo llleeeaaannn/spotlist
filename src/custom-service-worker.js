@@ -18,8 +18,10 @@ self.addEventListener('install', (event) => {
 });
 
 const cacheFirst = async (request) => {
+  console.log(request);
   const responseFromCache = await caches.match(request);
   if (responseFromCache) {
+    console.log('FOUND IN CACHE');
     return responseFromCache;
   }
   return fetch(request);
