@@ -1,5 +1,5 @@
 # Spotlist
-> An Offline-First Progressive Web Application which transforms concert setlists into Spotify Playlists.
+> A Progressive Web Application which transforms concert setlists into Spotify Playlists.
 > You can find it at [Spotlist.net](https://www.spotlist.net)
 
 ## Table of Contents
@@ -31,7 +31,7 @@
 ## Features
 Spotlist provides the following features:
 - The ability to create a playlist, comprising of all the songs from a chosen setlist, in the user's Spotify account from a [setlist.fm](https://www.setlist.fm/) link.
-- The application is lightweight and designed as an offline first progressive web app whereby users can take advantage of modern web technologies including background sync, notifications, offline mode...
+- The application is lightweight and designed as a progressive web app whereby users can take advantage of modern web technologies including background sync, notifications, offline mode...
 - Spotlist creates and assigns a custom name and description for the playlist based upon data parsed from the setlist while also allowing user's to input their own name and description if desired.
 
 
