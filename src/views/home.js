@@ -228,6 +228,5 @@ export default Home;
 // Handle user clicking enter when searching (use form better)
 // Implement refresh tokens
 // Add screenshots to manifest.json as seen in https://developer.mozilla.org/en-US/docs/Web/Manifest/screenshots
-// Change names of folders and repos to Spotlist
 // Add comments
 // Test all errors and add further error handling

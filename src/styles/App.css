@@ -61,8 +61,6 @@ table {
 	--opaqueGreen: rgba(28, 196, 84, 0.5);
 	--red: rgba(255, 0, 0, 1);
 	--opaqueRed: rgba(255, 0, 0, 0.75);
-	--blue: blue;
-	--yellow: yellow;
 	/* Fonts */
 	--fs-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
 	--fs-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
@@ -80,10 +78,6 @@ html {
 }
 
 html, button, ::placeholder {
-	font-family: 'GT Regular', sans-serif;
-}
-
-::placeholder {
 	font-family: 'GT Regular', sans-serif;
 }
 
