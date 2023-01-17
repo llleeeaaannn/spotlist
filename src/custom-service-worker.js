@@ -1,6 +1,7 @@
 // Always use 'spotlist-cache-v' format for Cache Name
 const CACHE_NAME = "spotlist-cache-v5";
 
+// Add fonts
 const CACHE_ASSETS = [
   "/",
   "/index.html",
@@ -39,9 +40,11 @@ self.addEventListener('activate', event => {
   )
 })
 
-// self.addEventListener('fetch', event => {
-//   event.respondWith(
-//     caches.match(event.request)
-//       .then(response => response || fetch(event.request))
-//   );
-// })
+// Respond with cached asset if available, otherwise fetch from network
+self.addEventListener('fetch', event => {
+  console.log('Fetching')
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => response || fetch(event.request))
+  );
+})
