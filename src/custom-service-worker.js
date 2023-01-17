@@ -1,5 +1,5 @@
 // Always use 'spotlist-cache-v' format for Cache Name
-const CACHE_NAME = "spotlist-cache-v5";
+const CACHE_NAME = "spotlist-cache-v7";
 
 // Add fonts
 const STATIC_ASSETS = [
@@ -7,7 +7,7 @@ const STATIC_ASSETS = [
   "/manifest.json"
 ]
 
-let CACHE_ASSETS = STATIC_ASSETS.concat(JSON.parse('%MANIFESTURLS%'));
+let CACHE_ASSETS = STATIC_ASSETS.concat(JSON.parse('["/static/css/main.bb03239a.css","/static/js/main.7000985f.js","/static/media/GTUltra-Regular.41205ca9d5907eb1575a.woff","/static/media/GTUltraFine-Ultra.cfa83d6cf4a2315cd1a9.woff","/index.html"]'));
 
 CACHE_ASSETS = new Set(CACHE_ASSETS);
 
@@ -25,7 +25,6 @@ self.addEventListener('install', event => {
         cache.addAll(CACHE_ASSETS);
       }
     )
-    // .then(() => self.skipWaiting())
   );
 });
 
@@ -46,12 +45,20 @@ self.addEventListener('activate', event => {
 })
 
 // Respond with cached asset if available, otherwise fetch from network
-self.addEventListener('fetch', event => {
-  console.log(`Fetching: ${event.request.url}`)
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        response || fetch(event.request)
-      })
-  );
-})
+// self.addEventListener('fetch', event => {
+//   console.log(`Fetching: ${event.request.url}`)
+//   event.respondWith((async () => {
+//     const cachedResponse = await caches.match(event.request);
+//     if (cachedResponse) {
+//       return cachedResponse;
+//     }
+//
+//     const response = await fetch(event.request);
+//
+//     if (!response || response.status !== 200) {
+//       return response;
+//     }
+//
+//     return response;
+//   }))
+// })
