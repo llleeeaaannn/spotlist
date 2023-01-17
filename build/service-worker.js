@@ -47,10 +47,18 @@ self.addEventListener('activate', event => {
 // Respond with cached asset if available, otherwise fetch from network
 self.addEventListener('fetch', event => {
   console.log(`Fetching: ${event.request.url}`)
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        response || fetch(event.request)
-      })
-  );
+  event.respondWith((async () => {
+    const cachedResponse = await caches.match(event.request);
+    if (cachedResponse) {
+      return cachedResponse;
+    }
+
+    const response = await fetch(event.request);
+
+    if (!response || response.status !== 200) {
+      return response;
+    }
+
+    return response;
+  }))
 })
