@@ -1,5 +1,5 @@
 // Always use 'spotlist-cache-v' format for Cache Name
-const CACHE_NAME = "spotlist-cache-v1";
+const CACHE_NAME = "spotlist-cache-v2";
 
 const CACHE_ASSETS = [
   "/",
