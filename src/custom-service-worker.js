@@ -7,7 +7,11 @@ const CACHE_ASSETS = [
   "/manifest.json"
 ]
 
+// Cache assets in CACHE_ASSETS on SW installation
 self.addEventListener('install', event => {
+
+  self.skipWaiting();
+
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
@@ -19,6 +23,7 @@ self.addEventListener('install', event => {
   );
 });
 
+// Remove old caches on SW activation
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(cacheNames => {
