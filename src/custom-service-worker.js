@@ -53,7 +53,7 @@ self.addEventListener('fetch', event => {
     const response = await fetch(event.request);
     console.log('Fetched from network', response);
     return response;
-  })
+  }))
 })
 
 
