@@ -1,5 +1,5 @@
 // Always use 'spotlist-cache-v' format for Cache Name
-const CACHE_NAME = "spotlist-cache-v7";
+const CACHE_NAME = "spotlist-cache-v8";
 
 // Add fonts
 const STATIC_ASSETS = [
@@ -45,20 +45,20 @@ self.addEventListener('activate', event => {
 })
 
 // Respond with cached asset if available, otherwise fetch from network
-// self.addEventListener('fetch', event => {
-//   console.log(`Fetching: ${event.request.url}`)
-//   event.respondWith((async () => {
-//     const cachedResponse = await caches.match(event.request);
-//     if (cachedResponse) {
-//       return cachedResponse;
-//     }
-//
-//     const response = await fetch(event.request);
-//
-//     if (!response || response.status !== 200) {
-//       return response;
-//     }
-//
-//     return response;
-//   }))
-// })
+self.addEventListener('fetch', event => {
+  console.log(`Fetching: ${event.request.url}`)
+  event.respondWith((async () => {
+    const cachedResponse = await caches.match(event.request);
+    if (cachedResponse) {
+      return cachedResponse;
+    }
+
+    const response = await fetch(event.request);
+
+    if (!response || response.status !== 200) {
+      return response;
+    }
+
+    return response;
+  }))
+})
