@@ -3,6 +3,7 @@ const CACHE_NAME = "spotlist-cache-v8";
 
 // Add fonts
 const STATIC_ASSETS = [
+  "/",
   "/index.html",
   "/manifest.json"
 ]
