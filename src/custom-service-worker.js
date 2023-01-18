@@ -46,12 +46,12 @@ self.addEventListener('activate', event => {
 })
 
 // Respond with cached asset if available, otherwise fetch from network
-self.addEventListener("fetch", event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => response || fetch(event.request))
-  );
-});
+// self.addEventListener('fetch', event => {
+//   event.respondWith(
+//     caches.match(event.request)
+//       .then(response => response || fetch(event.request))
+//   );
+// });
 
 
 

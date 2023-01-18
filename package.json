@@ -15,8 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "buildold": "react-scripts build && cat src/custom-service-worker.js >> build/service-worker.js",
-    "build": "react-scripts build && cat src/custom-service-worker.js >> build/service-worker.js && npm run update-service-worker",
+    "build": "react-scripts build && cat src/custom-service-worker.js >> build/service-worker.js",
+    "buildsw": "react-scripts build && cat src/custom-service-worker.js >> build/service-worker.js && npm run update-service-worker",
     "update-service-worker": "node scripts/update-service-worker.js",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "test": "react-scripts test",
