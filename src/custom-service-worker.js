@@ -1,5 +1,5 @@
 // Always use 'spotlist-cache-v' format for Cache Name
-const CACHE_NAME = "spotlist-cache-v8";
+const CACHE_NAME = "spotlist-cache-v9";
 
 // Add fonts
 const STATIC_ASSETS = [
