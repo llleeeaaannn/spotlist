@@ -31,7 +31,7 @@
 ## Features
 Spotlist provides the following features:
 - The ability to create a playlist, comprising of all the songs from a chosen setlist, in the user's Spotify account from a [setlist.fm](https://www.setlist.fm/) link.
-- Spotlist alos provides the user with the name (and associated artist) of all songs that were not available on Spotify.
+- Spotlist also provides the user with the name (and associated artist) of all songs that were not available on Spotify.
 - The application is lightweight and designed as a progressive web app whereby users can take advantage of modern web technologies including background sync, notifications, offline mode...
 - Spotlist creates and assigns a custom name and description for the playlist based upon data parsed from the setlist while also allowing user's to input their own name and description if desired.
 
