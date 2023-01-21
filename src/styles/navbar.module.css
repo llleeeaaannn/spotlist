@@ -10,9 +10,15 @@
   background-color: var(--black);
 }
 
-.navbar h1 {
+.title {
+  color: var(--green);
   font-size: var(--fs-xxl);
+  text-decoration: none;
   font-family: 'GT Ultra Fine', 'GT Regular', sans-serif;
+}
+
+.title:hover {
+  cursor: pointer;
 }
 
 /* Buttons */

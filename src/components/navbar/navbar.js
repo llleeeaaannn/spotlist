@@ -1,16 +1,12 @@
 import styles from '../../styles/navbar.module.css';
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-
-  const [selected, setSelected] = useState(false);
 
   return (
     <nav>
       <div className={styles.navbar}>
-        <div>
-          <h1>Spotlist</h1>
-        </div>
+        <Link className={styles.title} to="/">Spotlist</Link>
         <a href="https://github.com/llleeeaaannn/spotlist" className={styles.github} target='_blank' rel='noopener noreferrer'>
           <svg viewBox="0 0 24 24">
             <title>GitHub Logo linking to GitHub Repository</title>
