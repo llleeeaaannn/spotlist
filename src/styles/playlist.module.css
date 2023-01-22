@@ -38,6 +38,8 @@
 
 .buttons a,
 .buttons span {
+  display: grid;
+  place-items: center;
   color: var(--green);
   font-size: var(--fs-base);
   text-decoration: none;
