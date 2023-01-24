@@ -13,5 +13,5 @@ root.render(
   // </React.StrictMode>
 );
 
-serviceWorker.unregister();
+serviceWorker.register();
 // Put StrictMode back on after and fix any bugs
