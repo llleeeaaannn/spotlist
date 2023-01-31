@@ -35,7 +35,7 @@ const Playlist = () => {
       { playlistLink &&
         <div className={styles.created}>
           <h2>Your playlist has been created</h2>
-          <span>It's already your saved in Spotify account and you can also find it below:</span>
+          <span>It's already saved in your Spotify account and you can also find it below:</span>
           <div className={styles.buttons}>
             <span onClick={() => copyLink(playlistLink)}>{ copiedLink ? 'Copied Link' : 'Copy Link' }</span>
             <a href={playlistLink} target='_blank' rel='noopener noreferrer'>Open Playlist</a>
