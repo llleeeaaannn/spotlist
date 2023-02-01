@@ -4,7 +4,7 @@
   "theme_color": "#1cc454",
   "background_color": "#1cc454",
   "description": "An Offline-First Progressive Web Application which transforms concert setlists into Spotify Playlists",
-  "categories": ["music", "entertainment"],
+  "categories": ["music", "entertainment", "spotify"],
   "orientation": "portrait",
   "display": "fullscreen",
   "start_url": ".",
