@@ -6,7 +6,7 @@ const NotFound = () => {
   return (
     <div className={styles.notFound}>
         <span>404 Error</span>
-        <span>Unfortunately, this page doesn't exist</span>
+        <span>Unfortunately, this page doesn't exist :(</span>
         <Link to="/">Return Home</Link>
     </div>
   )
